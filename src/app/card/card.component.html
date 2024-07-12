@@ -1,0 +1,20 @@
+<div class="course-card"
+     [class.is-first]="styles?.first"
+     [class.is-last]="styles?.last"
+     [class.is-even]="styles?.even"
+     [class.is-odd]="styles?.odd"
+>
+  <div class="course-title">
+    {{index}}_{{course?.description}}
+  </div>
+  <img width="300" alt="Angular Logo"
+       [src]="course?.iconUrl">
+
+  <div class="course-description">
+    {{course?.longDescription}}
+  </div>
+
+  <button (click)="onCourseButtonBubble()">View Course Bubble</button>
+  <br>
+  <button (click)="onCourseButton()">View Course Emitter</button>
+</div>

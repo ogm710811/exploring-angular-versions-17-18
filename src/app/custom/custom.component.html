@@ -1,0 +1,9 @@
+<h1>{{ title }}</h1>
+<p>{{value}}</p>
+<p>{{label}}</p>
+<p>{{widthPx}}</p>
+<input
+  [value]="title"
+  (keyup)="onkeyUpEvent(titleInput.value)"
+  #titleInput
+>
